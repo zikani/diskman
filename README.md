@@ -1,45 +1,19 @@
-# diskman
-The provided script is a Python program for managing disks on Windows systems.
-#DiskMan - Text-Based Disk Management Utility
-DiskMan is a Python script that provides a user-friendly text-based interface for managing disks and volumes on your system. It allows you to perform various operations such as:
+# DiskMan
 
-Listing available disks
-Selecting a specific disk to work with
-Creating partitions on a disk
-Formatting volumes with different file systems (NTFS, FAT32, exFAT)
-Resizing existing volumes
-Viewing information about disks and volumes
-Features:
+DiskMan is a command-line tool for disk management tasks on Windows systems. It provides a text-based user interface (TUI) for performing various operations such as listing disks, creating and deleting partitions, formatting volumes, resizing volumes, and more.
 
-Easy-to-use menu-driven interface
-Supports basic disk and volume management operations
-User-friendly prompts for input
-#Requirements:
+## Features
 
-Python 3.x (Note: The script might require additional modules like disk_management and volume_management which are not included here. You might need to install them separately.)
-How to Use:
+- **List Disks**: View information about available disks on the system.
+- **Select Disk**: Choose a disk to perform operations on.
+- **Create and Delete Partition**: Manage disk partitions by creating or deleting them.
+- **Format Volume (Quick and Custom)**: Format volumes with quick or custom options including file system selection, allocation unit size, and volume label.
+- **Resize Volume**: Adjust volume sizes by extending or shrinking them.
+- **List Volumes**: Display information about volumes on selected disk or all disks.
 
-Save the script as diskman.py.
-Open a terminal or command prompt and navigate to the directory where you saved the script.
-Run the script using the following command:
-python diskman.py
-Follow the on-screen instructions and select the desired options from the menu.
-#Disclaimer:
+## Installation
 
-Formatting a disk or partition will erase all data on it. Ensure proper backups before proceeding.
-Use the tool with caution, as incorrect usage can lead to data loss.
-#Example Usage:
+1. Clone the repository:
 
-List available disks.
-Select a specific disk.
-Create a new partition with a size of 2048 MB.
-Format the selected disk's volume with the NTFS file system and a volume label of "DATA".
-View information about all volumes on the system.
-Further Development:
-
-Implement delete partition functionality.
-Enhance error handling for user input and potential disk operations failures.
-Consider adding support for additional file systems and advanced formatting options.
-Feedback and Contributions:
-
-We welcome feedback and contributions to improve DiskMan. Feel free to report any issues or suggest enhancements on [Platform where you want to host code] (replace with your preferred platform).
+```bash
+git clone https://github.com/zikani/diskman.git
